@@ -3,60 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Day Card 💕</title>
+    <title>💝 Valentine's Day Card 💝</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
 </head>
 <body>
     <div class="container">
-        <div class="heart-card">
-            <div class="page page-1 active">
-                <div class="heart-shape">
-                    <div class="content">
-                        <h1>💕</h1>
-                        <h2 id="page1-title">Happy Valentine's Day</h2>
-                        <p id="page1-text">Click to open...</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page page-2">
-                <div class="heart-shape">
-                    <div class="content">
-                        <h2 id="page2-title">You are</h2>
-                        <p id="page2-text">the reason I smile every day</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page page-3">
-                <div class="heart-shape">
-                    <div class="content">
-                        <h2 id="page3-title">Every moment with you</h2>
-                        <p id="page3-text">is a treasure I hold close to my heart</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page page-4">
-                <div class="heart-shape">
-                    <div class="content">
-                        <h2 id="page4-title">I love you</h2>
-                        <p id="page4-text">more than words can express</p>
-                        <div class="heart-emoji">❤️</div>
-                    </div>
-                </div>
-            </div>
+        <div class="heart-card" id="heartCard">
+            <!-- Pages will be dynamically generated here -->
         </div>
 
         <div class="controls">
-            <button id="prevBtn" class="btn btn-prev" disabled>
-                <span>←</span> Previous
+            <button class="btn" id="prevBtn" disabled>
+                <span>←</span>
+                <span>Previous</span>
             </button>
-            <span class="page-indicator">
-                <span id="currentPage">1</span> / <span id="totalPages">4</span>
-            </span>
-            <button id="nextBtn" class="btn btn-next">
-                Next <span>→</span>
+
+            <div class="page-indicator" id="pageIndicator">
+                <span id="currentPage">1</span> / <span id="totalPages">3</span>
+            </div>
+
+            <button class="btn" id="nextBtn">
+                <span>Next</span>
+                <span>→</span>
             </button>
         </div>
     </div>
@@ -65,3 +34,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
